@@ -15,15 +15,15 @@ public class DataManager extends DataBase {
     }
     
     public void ejecutarConsulta(String sql) throws SQLException{
-        iniciar();
+        //iniciar();
         this.conexion = super.getConexion();
         consulta = conexion.createStatement();
         consulta.execute(sql);
-        terminar();
+        //terminar();
     }
     
     public ResultSet obtenerDatos(String sql) throws SQLException {
-        iniciar();
+        //iniciar();
         this.consulta = conexion.createStatement();
         this.resultados = consulta.executeQuery(sql);
         return this.resultados;
@@ -31,7 +31,7 @@ public class DataManager extends DataBase {
     
     public List<Object> resultado(String sql) throws SQLException {
         List<Object> retorno = new ArrayList<>();
-        iniciar();
+        //iniciar();
         this.consulta = this.conexion.createStatement();
         this.resultados = this.consulta.executeQuery(sql);
         if (this.resultados.next()){
@@ -39,10 +39,10 @@ public class DataManager extends DataBase {
                 retorno.add(this.resultados.getObject(i));
             }
         }
-        terminar();
+        //terminar();
         return retorno;
     }
-    
+    /*
     @Override
     public void cerrar() throws SQLException{
         if (!this.conexion.isClosed())
@@ -58,5 +58,5 @@ public class DataManager extends DataBase {
         super.cerrar();
         this.conexion = super.getConexion();
     }
-    
+    */
 }

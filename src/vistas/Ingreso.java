@@ -46,7 +46,7 @@ public class Ingreso extends javax.swing.JFrame {
         setName("frmIngreso"); // NOI18N
         setResizable(false);
 
-        lblTitulo.setText("Bienvenidos al Sistema C.R.U.D.");
+        lblTitulo.setText("Bienvenidos al Sistema Abarrotes VILMA EIRL");
 
         lblUsuario.setText("Usuario:");
 

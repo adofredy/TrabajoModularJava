@@ -38,7 +38,7 @@ public class CrearProductoController {
             registro[6] = String.valueOf(datos.getInt("maxima_permitida"));
             modelo.addRow(registro);
         }
-        manejador.cerrar();
+        //manejador.cerrar();
         return modelo;
     }
 }
