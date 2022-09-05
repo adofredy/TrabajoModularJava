@@ -8,25 +8,9 @@ public class DataBase {
     private String driver;
     private Connection conexion;
     
-    /*
-    public DataBase(){
-        this.driver = "jdbc:sqlserver";
-        this.url = "DESKTOP-IICNPJO:1433;databaseName=bdAbarrotes";
-    }
-    
-    protected void conectar() throws SQLException{
-        this.conexion = DriverManager.getConnection(this.driver+":"+this.url);
-        if (!this.conexion.isClosed())
-            System.out.println("Conectado");
-    }
-    
-    protected void cerrar() throws SQLException {
-        if (!this.conexion.isClosed())
-            this.conexion.close();
-    }*/
 
     protected Connection getConexion() {
-        String url = "jdbc:sqlserver://DESKTOP-IICNPJO:1433;databaseName=bdAbarrotes";
+        String url = "jdbc:sqlserver://DESKTOP-L2A352G:1433;databaseName=bdAbarrotes";
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
         } catch (ClassNotFoundException e) {
