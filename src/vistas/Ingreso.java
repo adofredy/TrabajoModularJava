@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author TecniDEV
+ * @author Adolfo Fredy
  */
 public class Ingreso extends javax.swing.JFrame {
 
@@ -33,6 +33,8 @@ public class Ingreso extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         logo = new javax.swing.JLabel();
         btnIngresar = new javax.swing.JButton();
         btnCancelar = new javax.swing.JButton();
@@ -52,8 +54,16 @@ public class Ingreso extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/logo_comercial_lucia.jpg"))); // NOI18N
-        getContentPane().add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 40, -1, -1));
+        jLabel1.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel1.setText(" © 2022 Freelancer DevAdolfoFredy");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 270, -1, -1));
+
+        jLabel2.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        jLabel2.setText("Todos los derechos reservados ");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 240, -1, -1));
+
+        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/comercial_Lucia.png"))); // NOI18N
+        getContentPane().add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, -1));
 
         btnIngresar.setText("Ingresar");
         btnIngresar.addActionListener(new java.awt.event.ActionListener() {
@@ -61,7 +71,7 @@ public class Ingreso extends javax.swing.JFrame {
                 btnIngresarActionPerformed(evt);
             }
         });
-        getContentPane().add(btnIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 220, -1, -1));
+        getContentPane().add(btnIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 180, -1, -1));
 
         btnCancelar.setText("Cancelar");
         btnCancelar.addActionListener(new java.awt.event.ActionListener() {
@@ -69,7 +79,7 @@ public class Ingreso extends javax.swing.JFrame {
                 btnCancelarActionPerformed(evt);
             }
         });
-        getContentPane().add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 220, -1, -1));
+        getContentPane().add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 180, -1, -1));
 
         lblTitulo.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
         lblTitulo.setText("Bienvenidos al Sistema Abarrotes ");
@@ -77,13 +87,13 @@ public class Ingreso extends javax.swing.JFrame {
 
         lblUsuario.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
         lblUsuario.setText("Usuario:");
-        getContentPane().add(lblUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, -1, -1));
-        getContentPane().add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 110, 266, -1));
+        getContentPane().add(lblUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, -1, -1));
+        getContentPane().add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 60, 266, -1));
 
         lblClave.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
         lblClave.setText("Contraseña:");
-        getContentPane().add(lblClave, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, -1, -1));
-        getContentPane().add(txtClave, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, 266, -1));
+        getContentPane().add(lblClave, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 100, -1, -1));
+        getContentPane().add(txtClave, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 100, 266, -1));
 
         lblError.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         getContentPane().add(lblError, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 271, 547, 27));
@@ -97,7 +107,7 @@ public class Ingreso extends javax.swing.JFrame {
         getContentPane().add(btnCerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(518, 0, -1, -1));
 
         fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo2.jpg"))); // NOI18N
-        getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, 320));
+        getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, 320));
 
         pack();
         setLocationRelativeTo(null);
@@ -168,6 +178,8 @@ public class Ingreso extends javax.swing.JFrame {
     private javax.swing.JButton btnCerrar;
     private javax.swing.JButton btnIngresar;
     private javax.swing.JLabel fondo;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel lblClave;
     private javax.swing.JLabel lblError;
     private javax.swing.JLabel lblTitulo;

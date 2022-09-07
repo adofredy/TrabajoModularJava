@@ -37,6 +37,7 @@ public class Principal extends javax.swing.JFrame {
         mnuProductos = new javax.swing.JMenu();
         menuProductosCrear = new javax.swing.JMenuItem();
         menuProductosEditar = new javax.swing.JMenuItem();
+        menuProductosComprar = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("C.R.U.D. NetBeans");
@@ -74,6 +75,14 @@ public class Principal extends javax.swing.JFrame {
         });
         mnuProductos.add(menuProductosEditar);
 
+        menuProductosComprar.setText("Comprar Producto");
+        menuProductosComprar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuProductosComprarActionPerformed(evt);
+            }
+        });
+        mnuProductos.add(menuProductosComprar);
+
         menuPrincipal.add(mnuProductos);
 
         setJMenuBar(menuPrincipal);
@@ -106,6 +115,11 @@ public class Principal extends javax.swing.JFrame {
         EditarProductoInternalFrame editar = new EditarProductoInternalFrame();
         cargarFormulario(editar);
     }//GEN-LAST:event_menuProductosEditarActionPerformed
+
+    private void menuProductosComprarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuProductosComprarActionPerformed
+        FormularioCompraProductoInternalFrame crear = new FormularioCompraProductoInternalFrame();
+        cargarFormulario(crear);
+    }//GEN-LAST:event_menuProductosComprarActionPerformed
 
     private void cargarFormulario(JInternalFrame ventana){
         panelContenedor.removeAll();
@@ -155,6 +169,7 @@ public class Principal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuBar menuPrincipal;
+    private javax.swing.JMenuItem menuProductosComprar;
     private javax.swing.JMenuItem menuProductosCrear;
     private javax.swing.JMenuItem menuProductosEditar;
     private javax.swing.JMenu mnuProductos;

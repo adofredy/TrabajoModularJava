@@ -11,7 +11,7 @@ public class IngresoController {
     public boolean isValido() {
         return valido;
     }
-    
+    //Método para validar el login segun el registro de BD
     public boolean validarUsuario(String usuario, String clave) throws SQLException{
         DataManager manejador = new DataManager();
         List<Object> lista = new ArrayList<>();

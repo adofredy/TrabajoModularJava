@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author TecniDEV
+ * @author Adolfo Fredy
  */
 public class EditarProductoInternalFrame extends javax.swing.JInternalFrame {
 

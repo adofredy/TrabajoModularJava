@@ -3,14 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/F:/TAREA_CRUD_JAVA/CRUDNetBeans/src/modelos/DataBase.java</file>
-            <file>file:/F:/TAREA_CRUD_JAVA/CRUDNetBeans/src/controladores/CrearProductoController.java</file>
-            <file>file:/F:/TAREA_CRUD_JAVA/CRUDNetBeans/src/vistas/Principal.java</file>
-            <file>file:/F:/TAREA_CRUD_JAVA/CRUDNetBeans/src/modelos/DataManager.java</file>
-            <file>file:/F:/TAREA_CRUD_JAVA/CRUDNetBeans/src/controladores/EditarProductoController.java</file>
-            <file>file:/F:/TAREA_CRUD_JAVA/CRUDNetBeans/src/vistas/Ingreso.java</file>
-            <file>file:/F:/TAREA_CRUD_JAVA/CRUDNetBeans/src/crudnetbeans/CRUDNetBeans.java</file>
-            <file>file:/F:/TAREA_CRUD_JAVA/CRUDNetBeans/src/controladores/IngresoController.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/TrabajoModularJava/src/modelos/DataManager.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/TrabajoModularJava/src/vistas/FormularioCompraProductoInternalFrame.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/TrabajoModularJava/src/controladores/FormularioCompraController.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/TrabajoModularJava/src/controladores/CrearProductoController.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/TrabajoModularJava/src/vistas/Principal.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/TrabajoModularJava/src/vistas/CrearProductoInternalFrame.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/TrabajoModularJava/src/vistas/Ingreso.java</file>
         </group>
     </open-files>
 </project-private>

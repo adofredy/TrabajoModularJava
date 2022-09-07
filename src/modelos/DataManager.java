@@ -2,23 +2,23 @@ package modelos;
 
 import java.sql.*;
 import java.util.*;
-
+//manejador de Datos - DataManager 
 public class DataManager extends DataBase {
-    
-    private Connection conexion;
-    private Statement consulta;
+    //hereda de la clase Database
+    private Connection conexion;//atributo de puntero
+    private Statement consulta;//para ejecutar una consulta a BD
     private ResultSet resultados;
     
     public DataManager(){
-        super();
-        this.conexion = super.getConexion();
+        super();//de encarga de admin los accesos a la BD segun un control
+        this.conexion = super.getConexion();//genera la conexion
     }
-    
+    /*método para hacer insert a BD*/
     public void ejecutarConsulta(String sql) throws SQLException{
-        
-        this.conexion = super.getConexion();
-        consulta = conexion.createStatement();
-        consulta.execute(sql);
+        //método recibe una consulta , recibe de parámetro una intruccion tipo sql
+        this.conexion = super.getConexion();//atraves del super invoco al método de conectar
+        consulta = conexion.createStatement();//creo una consulta para la conexion, y a la vez guarda el puntero conexion
+        consulta.execute(sql);//ejecuta la consulta SQL
        
     }
     
